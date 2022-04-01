@@ -1,0 +1,14 @@
+@import "./variables";
+
+.booking-btn-style {
+    color: $white-clr;
+    background: linear-gradient(90deg, #f94843, #ff7b49);
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    transition: $transition-05s;
+    &:hover {
+        background: linear-gradient(-90deg, #f94843, #ff7b49);
+    }
+}

@@ -1,0 +1,302 @@
+@import "./classes";
+@import "./variables";
+
+/*======= Keyframes Header Slide Down =======*/
+@-webkit-keyframes headerSlideDown {
+    0% {
+      transform: translateY(-150px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes headerSlideDown {
+    0% {
+      transform: translateY(-150px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /*======= Header =======*/
+  .site-header {
+    background: $white-clr;
+    mix-blend-mode: normal;
+    // box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
+  }
+  .navbar-wrapper .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .book-now-btn {
+        @extend .booking-btn-style;
+    }
+  }
+  .nav-brand {
+    display: block;
+    img {
+        z-index: 99999;
+        width:182px;
+        height: 44px;
+    }
+  }
+  
+  .navbar-wrapper .nav-menu ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-wrapper .nav-menu ul li {
+    position: relative;
+    line-height: 56px;
+    margin: 0 10px;
+   
+  }
+  
+  .navbar-wrapper .nav-menu a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #101010;
+    text-transform: capitalize;
+    padding: 10px;
+    transition: $transition-03s;
+    position: relative;
+    &::before {
+      content: '';
+      width: 0;
+      height: 0.3rem;
+      border-radius: 50px;
+      background: $primary-clr;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: $transition-05s;
+    }
+    &:hover  {
+      &::before {
+        width: 40%;
+      }
+    }
+  }
+  
+  .navbar-wrapper .nav-menu .dd-trigger {
+    padding-left: 6px;
+  }
+  
+  .navbar-wrapper .nav-menu li.current::after {
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar-wrapper .nav-menu li.current a::before {
+    width: 50%;
+  }
+  
+  .navbar-wrapper .nav-menu li.current>a,
+  .navbar-wrapper .nav-menu a:hover {
+    color: $primary-clr;
+  }
+  
+  .navbar-wrapper .nav-toggler {
+    margin-left: 30px;
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-wrapper .nav-toggler span {
+    margin: 0 auto;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: $primary-clr;
+    transition: $transition-03s;
+  }
+  
+  .navbar-wrapper .nav-toggler span::before,
+  .navbar-wrapper .nav-toggler span::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: $primary-clr;
+    display: block;
+    transition: $transition-03s;
+  }
+  
+  .navbar-wrapper .nav-toggler span::before {
+    margin-top: -8px;
+  }
+  
+  .navbar-wrapper .nav-toggler span::after {
+    margin-top: 8px;
+  }
+  
+  .navbar-wrapper .nav-toggler.panel-opened span {
+    background-color: transparent;
+  }
+  
+  .navbar-wrapper .nav-toggler.panel-opened span::before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.2s;
+  }
+  
+  .navbar-wrapper .nav-toggler.panel-opened span::after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.2s;
+  }
+  
+  .navbar-wrapper.breakpoint-on {
+    padding: 15px 0;
+  }
+  
+  .transparent-header .navbar-wrapper.breakpoint-on .navbar-inner {
+    padding: 15px 0;
+  }
+  
+  .transparent-header .navbar-wrapper.breakpoint-on {
+    padding: 0;
+  }
+  
+  .navbar-wrapper.breakpoint-on .nav-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .navbar-wrapper.breakpoint-on .nav-menu {
+    display: none;
+  }
+  
+  /*======= Mobile Panel =======*/
+  .mobile-menu-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: $secondary-clr;
+    z-index: 999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: $transition-03s;
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+
+    .book-now-btn {
+        @extend .booking-btn-style;
+    }
+  }
+  
+  .mobile-menu-panel.panel-opened {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .mobile-menu-panel {
+    a.brand-logo {
+      padding: 2rem 2rem 1.5rem;
+    }
+  }
+  
+  .mobile-menu-panel .panel-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .mobile-menu-panel .panel-menu li {
+    display: block;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .mobile-menu-panel .panel-menu li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $primary-clr;
+    visibility: hidden;
+  }
+  
+  .mobile-menu-panel .panel-menu li.current::before {
+    visibility: visible;
+  }
+  
+  .mobile-menu-panel .panel-menu li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $white-clr;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mobile-menu-panel .panel-menu .dd-trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+  }
+  
+  .mobile-menu-panel .panel-menu .dd-trigger i {
+    transform: rotate(-90deg);
+    transition: $transition-05s;
+  }
+  
+  .mobile-menu-panel .panel-extra {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .mobile-menu-panel .panel-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 12;
+    color: $white-clr;
+    font-size: 30px;
+    line-height: 1;
+  }
+  
+  /*======= Sticky Header =======*/
+  .sticky-header.sticky-on .navbar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    animation: 1.15s ease 0s normal forwards 1 running headerSlideDown;
+    background: $white-clr;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
+    border-color: transparent;
+  }
+  
+  .sticky-header.sticky-on.transparent-header .navbar-inner {
+    border-color: transparent;
+  }
+  

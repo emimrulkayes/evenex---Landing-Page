@@ -1,0 +1,13 @@
+/*=== Footer area start===*/
+.copy-right {
+  padding: 1rem 0;
+  color: $white-clr;
+  background: $secondary-clr;
+  a {
+    color: $primary-clr;
+    &:hover {
+      color: $primary-clr;
+    }
+  }
+}
+/*=== Footer area End ===*/

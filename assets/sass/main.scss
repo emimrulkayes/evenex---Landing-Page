@@ -1,0 +1,84 @@
+@import "./partials/header";
+@import "./partials/banner";
+@import "./partials/footer";
+@import "./partials/classes";
+@import "./partials/variables";
+/*=======  Google Fonts  =======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $secondary-font;
+  color: $text-clr;
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+// Bootstrap Font size with rem (1rem = 10px)
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/*--- Reset Style ---*/
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+a:hover {
+  color: $primary-clr;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+.btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/*======= Reuseable Classes =======*/
+.section-space {
+  padding: 6rem 0;
+}
+
+
