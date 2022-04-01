@@ -26,6 +26,7 @@
   .site-header {
     background: $white-clr;
     mix-blend-mode: normal;
+    padding: 3rem 0;
     // box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
   }
   .navbar-wrapper .navbar-inner {
@@ -39,9 +40,8 @@
   .nav-brand {
     display: block;
     img {
-        z-index: 99999;
-        width:182px;
-        height: 44px;
+        width: 18.2rem;
+        height: 4.4rem;
     }
   }
   
@@ -52,9 +52,7 @@
   
   .navbar-wrapper .nav-menu ul li {
     position: relative;
-    line-height: 56px;
-    margin: 0 10px;
-   
+    margin: 0 1rem;
   }
   
   .navbar-wrapper .nav-menu a {
@@ -69,18 +67,33 @@
     &::before {
       content: '';
       width: 0;
-      height: 0.3rem;
+      height: 0.5rem;
       border-radius: 50px;
       background: $primary-clr;
       position: absolute;
       bottom: 0.5rem;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 40%;
+      transform: translateX(-40%);
+      transition: $transition-05s;
+    }
+    &::after {
+      content: '';
+      width: 0;
+      height: 0.5rem;
+      border-radius: 50px;
+      background: $primary-clr;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 60%;
+      transform: translateX(-60%);
       transition: $transition-05s;
     }
     &:hover  {
       &::before {
-        width: 40%;
+        width: 0.5rem;
+      }
+      &::after {
+        width: 0.5rem;
       }
     }
   }
@@ -94,7 +107,10 @@
     opacity: 1;
   }
   .navbar-wrapper .nav-menu li.current a::before {
-    width: 50%;
+    width: 0.5rem;
+  }
+  .navbar-wrapper .nav-menu li.current a::after {
+    width: 0.5rem;
   }
   
   .navbar-wrapper .nav-menu li.current>a,
@@ -170,8 +186,6 @@
   }
   
   .navbar-wrapper.breakpoint-on .nav-toggler {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   
@@ -184,7 +198,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 300px;
+    width: 30rem;
     height: 100vh;
     background-color: $secondary-clr;
     z-index: 999;
@@ -239,8 +253,8 @@
   
   .mobile-menu-panel .panel-menu li a {
     display: block;
-    padding: 10px 25px;
-    font-size: 15px;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.5;
     color: $white-clr;
@@ -294,6 +308,7 @@
     mix-blend-mode: normal;
     box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
     border-color: transparent;
+    padding: 1.5rem 0;
   }
   
   .sticky-header.sticky-on.transparent-header .navbar-inner {

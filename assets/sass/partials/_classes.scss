@@ -8,6 +8,7 @@
     border-radius: 0.5rem;
     margin-left: 2rem;
     transition: $transition-05s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     &:hover {
         background: linear-gradient(-90deg, #f94843, #ff7b49);
     }

@@ -1,0 +1,86 @@
+@import "./variables";
+.search-icon {
+    padding: 0 2rem;
+}
+a.search-btn {
+    &::after {
+        display: none;
+    }
+    &:hover {
+        i:before {
+            color: $secondary-clr;
+        }
+    }
+    i:before {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $secondary-clr;
+        vertical-align: middle;
+        transition: $transition-03s;
+    }
+}
+.nav-right { 
+    position: relative;
+}
+.searchbox {
+    opacity: 0;
+    position: absolute;
+    width: 0%;
+    right: 0px;
+    left: auto;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.searchbox.searchbox-open {
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    top: 4.5rem;
+    opacity: 1;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    input[type="search"] {
+        outline: none;
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: $secondary-font;
+        color: $secondary-clr;
+        top: 10px;
+        right: 0;
+        outline: none;
+        background: $white-clr;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0 0.5rem 1rem;
+        border-radius: none;
+    }
+    input {
+        outline: none;
+        border-radius: none;
+        border-bottom: 1px solid $primary-clr;
+        border-left: 3px solid $primary-clr;
+    }
+}
+
+.searchbox-submit {
+    padding: 0 1.8rem;
+    height: 100%;
+    overflow: hidden;
+    background: $secondary-clr;
+    border: none;
+    i:before {
+        font-size: 2rem;
+        color: $white-clr;
+        font-weight: 400;
+    }
+}
+
+
+
+.input-group-prepend {
+    margin-right: 0 !important;
+    background: $secondary-clr;
+}

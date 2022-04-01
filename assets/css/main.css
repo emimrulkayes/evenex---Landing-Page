@@ -12,6 +12,8 @@
   margin-left: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .booking-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
@@ -49,6 +51,7 @@
 .site-header {
   background: #FFFFFF;
   mix-blend-mode: normal;
+  padding: 3rem 0;
 }
 
 .navbar-wrapper .navbar-inner {
@@ -68,9 +71,8 @@
 }
 
 .nav-brand img {
-  z-index: 99999;
-  width: 182px;
-  height: 44px;
+  width: 18.2rem;
+  height: 4.4rem;
 }
 
 .navbar-wrapper .nav-menu ul {
@@ -84,8 +86,7 @@
 
 .navbar-wrapper .nav-menu ul li {
   position: relative;
-  line-height: 56px;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 
 .navbar-wrapper .nav-menu a {
@@ -103,20 +104,39 @@
 .navbar-wrapper .nav-menu a::before {
   content: '';
   width: 0;
-  height: 0.3rem;
+  height: 0.5rem;
   border-radius: 50px;
   background: #f9504c;
   position: absolute;
   bottom: 0.5rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 40%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-wrapper .nav-menu a::after {
+  content: '';
+  width: 0;
+  height: 0.5rem;
+  border-radius: 50px;
+  background: #f9504c;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 60%;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .navbar-wrapper .nav-menu a:hover::before {
-  width: 40%;
+  width: 0.5rem;
+}
+
+.navbar-wrapper .nav-menu a:hover::after {
+  width: 0.5rem;
 }
 
 .navbar-wrapper .nav-menu .dd-trigger {
@@ -129,7 +149,11 @@
 }
 
 .navbar-wrapper .nav-menu li.current a::before {
-  width: 50%;
+  width: 0.5rem;
+}
+
+.navbar-wrapper .nav-menu li.current a::after {
+  width: 0.5rem;
 }
 
 .navbar-wrapper .nav-menu li.current > a,
@@ -229,7 +253,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 300px;
+  width: 30rem;
   height: 100vh;
   background-color: #101010;
   z-index: 999;
@@ -281,8 +305,8 @@
 
 .mobile-menu-panel .panel-menu li a {
   display: block;
-  padding: 10px 25px;
-  font-size: 15px;
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.5;
   color: #FFFFFF;
@@ -346,6 +370,7 @@
   -webkit-box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
           box-shadow: 0px 4px 4px rgba(16, 16, 16, 0.1);
   border-color: transparent;
+  padding: 1.5rem 0;
 }
 
 .sticky-header.sticky-on.transparent-header .navbar-inner {
@@ -385,6 +410,8 @@
   margin-left: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .booking-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
@@ -395,6 +422,214 @@
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.search-icon {
+  padding: 0 2rem;
+}
+
+a.search-btn::after {
+  display: none;
+}
+
+a.search-btn:hover i:before {
+  color: #101010;
+}
+
+a.search-btn i:before {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #101010;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-right {
+  position: relative;
+}
+
+.searchbox {
+  opacity: 0;
+  position: absolute;
+  width: 0%;
+  right: 0px;
+  left: auto;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.searchbox.searchbox-open {
+  width: 50rem;
+  height: 5rem;
+  position: absolute;
+  top: 4.5rem;
+  opacity: 1;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.searchbox.searchbox-open input[type="search"] {
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #101010;
+  top: 10px;
+  right: 0;
+  outline: none;
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-radius: none;
+}
+
+.searchbox.searchbox-open input {
+  outline: none;
+  border-radius: none;
+  border-bottom: 1px solid #f9504c;
+  border-left: 3px solid #f9504c;
+}
+
+.searchbox-submit {
+  padding: 0 1.8rem;
+  height: 100%;
+  overflow: hidden;
+  background: #101010;
+  border: none;
+}
+
+.searchbox-submit i:before {
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.input-group-prepend {
+  margin-right: 0 !important;
+  background: #101010;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+/*--- preloader ---*/
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: #d8d8d8;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  vertical-align: center;
+}
+
+.preloader .loader > div {
+  height: 100%;
+  width: 10px;
+  display: inline-block;
+  margin-left: 2px;
+  -webkit-animation: delay 0.8s infinite ease-in-out;
+          animation: delay 0.8s infinite ease-in-out;
+}
+
+.preloader .loader {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.preloader .loader .bar {
+  border-radius: 2px;
+  width: 5px;
+  height: 30px;
+  margin: -2px;
+  background-color: #101010;
+}
+
+.preloader .loader .bar2 {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+
+.preloader .loader .bar3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+.preloader .loader .bar4 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.preloader .loader .bar5 {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.preloader .loader .bar6 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.preloader .loader .bar7 {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.preloader .loader .bar8 {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+
+.preloader .loader .bar9 {
+  -webkit-animation-delay: -0s;
+          animation-delay: -0s;
+}
+
+@-webkit-keyframes delay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  20% {
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+}
+
+@keyframes delay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  20% {
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+}
+
+/*--- Preloader CSS END ---*/
 /*=======  Google Fonts  =======*/
 * {
   margin: 0;

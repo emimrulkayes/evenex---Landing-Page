@@ -1,29 +1,44 @@
-/*-----------------------------------------------------------------------------------
-    Template Name: #
-    Template URI: #
-    Author:
-    Author URI:  #
-    Version: 1.0
-
-    Note: This is Main Js file
------------------------------------------------------------------------------------
-    Js INDEX
-    ===================
-    ## Main Menu
-    ## Sticky Header
-    ## Header Breakpoint Resize
-    ## Counter Up
-    ## Project Progress Bar
-    ## Project Slider One
-    ## Project Slider Two
-    ## Team Slider
-    ## Active Tooltip
-    ## Image Block slider
-    ## Preloader
------------------------------------------------------------------------------------*/
-
 (function ($) {
     'use strict';
+    // PreLoader 
+    jQuery(window).on('load', function() {
+        //jQuery(".preloader").fadeOut(1000);
+        $(".preloader").delay(1600).fadeOut("slow");
+    });
+
+
+    /*======= Search bar=======*/
+    var submitIcon = $('.search-btn i');
+    var inputBox = $('.searchbox-input');
+    var searchBox = $('.searchbox');
+    var isOpen = false;
+    submitIcon.click(function() {
+        if (isOpen == false) {
+            searchBox.addClass('searchbox-open');
+            submitIcon.attr('class', 'bx bx-x');
+            inputBox.focus();
+            isOpen = true;
+        } else {
+            searchBox.removeClass('searchbox-open');
+            submitIcon.attr('class', 'bx bx-search');
+            inputBox.focusout();
+            isOpen = false;
+        }
+    });
+    submitIcon.mouseup(function() {
+        return false;
+    });
+    searchBox.mouseup(function() {
+        return false;
+    });
+    $(document).mouseup(function() {
+        if (isOpen == true) {
+            $('.searchbox-icon').css('display', 'block');
+            submitIcon.click();
+        }
+    });
+    /*======= Search bar end =======*/
+
     // ===== Main Menu
     function mainMenu() {
         const navbarToggler = $('.nav-toggler'),
