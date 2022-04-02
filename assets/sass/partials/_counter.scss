@@ -1,0 +1,39 @@
+@import "./classes";
+@import "./variables";
+
+.counter-area {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: relative;
+    z-index: 1;
+    background-color: $white-clr;
+    padding: 1rem 3rem;
+
+    .counter-container {
+        
+        .counter-info {
+            .inner-count {
+                padding: 1.5rem 0;
+                h2 {
+                    @extend .section-title-style;
+                    color: $primary-clr;
+                    font-size: 4rem;
+                    margin: 0;
+                }
+           
+                i {
+                    vertical-align: middle;
+                    display: flex;
+                    align-items: center;
+                    color: $primary-clr;
+                    &::before {
+                        font-size: 3rem;
+                    }
+                }
+            }
+            h4 {
+                @extend .section-sub-title-style;
+                color: $secondary-clr;
+            }
+        }
+    }
+}

@@ -26,7 +26,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -34,7 +34,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -432,7 +432,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -440,7 +440,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -750,7 +750,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -758,7 +758,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -1011,7 +1011,7 @@ a.search-btn i:before {
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1019,7 +1019,7 @@ a.search-btn i:before {
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -1034,9 +1034,118 @@ a.search-btn i:before {
   line-height: 2.6rem;
 }
 
+.counter-overview-area {
+  background-color: #f0f3f6;
+  position: relative;
+  border-bottom: 1px solid;
+}
+
+.counter-overview-area::before {
+  background-image: url(../images/fun-facts/dot_shape.svg);
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 31%;
+  z-index: 0;
+  width: 17.5rem;
+  height: 17.5rem;
+  background-repeat: no-repeat;
+}
+
 .counter-overview-area .counter-title p.sub-title {
   color: #f9504c;
   margin-top: -4rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Rubik", sans-serif;
+}
+
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.counter-area {
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding: 1rem 3rem;
+}
+
+.counter-area .counter-container .counter-info .inner-count {
+  padding: 1.5rem 0;
+}
+
+.counter-area .counter-container .counter-info .inner-count h2 {
+  color: #f9504c;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.counter-area .counter-container .counter-info .inner-count i {
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f9504c;
+}
+
+.counter-area .counter-container .counter-info .inner-count i::before {
+  font-size: 3rem;
+}
+
+.counter-area .counter-container .counter-info h4 {
+  color: #101010;
 }
 
 /*=======  Google Fonts  =======*/

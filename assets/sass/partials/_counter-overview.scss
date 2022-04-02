@@ -1,6 +1,20 @@
 @import "./classes";
 
 .counter-overview-area {
+    background-color: #f0f3f6;
+    position: relative;
+    border-bottom: 1px solid;
+    &::before{
+        background-image: url(../images/fun-facts/dot_shape.svg);
+        content: "";
+        position: absolute;
+        bottom: 1rem;
+        left: 31%;
+        z-index: 0;
+        width: 17.5rem;
+        height: 17.5rem;
+        background-repeat: no-repeat;
+    }
     .counter-title {
         p.sub-title {
             @extend .section-sub-title-style;
@@ -11,7 +25,6 @@
             @extend .section-title-style;
         }
     }
-
     .counter-info {
         @extend .section-info-style;
     }
