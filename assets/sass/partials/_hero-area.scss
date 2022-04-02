@@ -163,6 +163,7 @@
             }
         }
         .hero-area-btns {
+            // justify-content: start;
             .purchase-btn {
                 @extend .primary-btn-style;
                 background: $secondary-clr;

@@ -46,12 +46,6 @@
 						<img src="./assets/images/header/logo.png" alt="Brand Logo">
 					</a>
 
-					<div class="navbar-extra d-flex align-items-center">
-						<a href="#" class="nav-toggler">
-							<span></span>
-						</a>
-					</div>
-
 					<div class="nav-menu ms-auto">
 						<ul>
 							<li class="current">
@@ -72,7 +66,7 @@
 						</ul>
 					</div>
 
-					<div class="nav-right d-flex align-items-center">
+					<div class="nav-right d-flex ms-auto align-items-center d-none d-sm-block">
 						<div class="search-icon">
 							<a class="search-btn" data-toggle="modal" data-target="#search-modal">
 								<i class="bx bx-search"></i>
@@ -84,7 +78,12 @@
 								<div class="input-group-text searchbox-submit"><i class="bx bx-search"></i></div>
 							</div>
 						</div>
-						
+					</div>
+
+					<div class="navbar-extra d-flex align-items-center">
+						<a href="#" class="nav-toggler">
+							<span></span>
+						</a>
 					</div>
 
 					<button class="book-now-btn btn d-none d-lg-block"> <i class="fa-solid fa-couch"></i> Book Tickets</button>
@@ -141,8 +140,8 @@
 								<span class="date">24-26 December 2019</span> <br>
 								<span class="place">Gotham Hall, Broadway</span>
 							</div>
-							<div class="hero-area-btns d-flex justify-content-start align-items-center">
-								<button class="purchase-btn btn d-none d-lg-block"> <i class="fa-solid fa-couch"></i> Purchase Ticket</button>
+							<div class="hero-area-btns d-flex flex-wrap">
+								<button class="purchase-btn btn"> <i class="fa-solid fa-couch"></i> Purchase Ticket</button>
 								<button class="btn-calendar btn btn-link"><i class="fa-solid fa-circle-plus"></i> Add to Calendar</button>
 							</div>
 
@@ -264,29 +263,90 @@
 		</section>
 		<!-- Counter OvarView Area end -->
 
-		
+		<!-- Gallary Area -->
+		<section class="gallary-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box title-box">
+							<p class="sub-title"># Photo gallery</p>
+							<h2 class="title">It was an amazing crowd</h2>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/01.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/02.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/03.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/04.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/05.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<figure>
+								<img src="./assets/images/gallary/06.jpg" class="img-fluid" alt="Gallary">
+							</figure>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="gallary-img-box">
+							<p class="sub-title social-media"><a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a></p>
+							<h3 class="title">@Evenex-meet</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Gallary Area end -->
 
 		<!-- Timer Area -->
 		<section class="timer-area">
 			<div class="container">
 				<div class="row d-flex align-items-center">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-5">
+					<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 						<figure class="timer-img">
 							<img src="./assets/images/counters//front_img.png" class="img-fluid" alt="Microphone">
 						</figure>
 					</div>
 
-					<div class="col-12 col-sm-12 col-md-6 col-lg-7">
+					<div class="col-12 col-sm-12 col-md-7 col-lg-7">
 						<div class="time-counter">
 							<h3 class="timer-title">Never miss another speaker <br>
 								announcement</h3>
-							<div class="d-flex justify-content-start " id="timer">
+							<div class="d-flex" id="timer">
 								<div id="days" class="time-count">-338<span>Days</span></div> 
 								<div id="hours" class="time-count">00<span>Hours</span></div> 
 								<div id="minutes" class="time-count">49<span>Minutes</span></div> 
 								<div id="seconds" class="time-count">38<span>Seconds</span></div>
 							</div>
-							<button class="purchase-btn btn d-none d-lg-block"> <i class="fa-solid fa-couch"></i> Purchase Ticket</button>
+							<button class="purchase-btn btn"> <i class="fa-solid fa-couch"></i> Purchase Ticket</button>
 						</div>
 					</div>
 				</div>

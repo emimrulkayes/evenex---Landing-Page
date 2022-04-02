@@ -26,7 +26,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -34,7 +34,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -190,7 +190,6 @@
 }
 
 .navbar-wrapper .nav-toggler {
-  margin-left: 30px;
   position: relative;
   display: block;
   width: 55px;
@@ -432,7 +431,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -440,7 +439,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -750,7 +749,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -758,7 +757,7 @@
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -780,7 +779,7 @@
 /*--- Colors ---*/
 /*--- Transitions ---*/
 .search-icon {
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 
 a.search-btn::after {
@@ -808,7 +807,7 @@ a.search-btn i:before {
   opacity: 0;
   position: absolute;
   width: 0%;
-  right: 0px;
+  right: 5rem;
   left: auto;
   overflow: hidden;
   -webkit-transition: width 0.3s;
@@ -816,10 +815,10 @@ a.search-btn i:before {
 }
 
 .searchbox.searchbox-open {
-  width: 50rem;
-  height: 5rem;
+  width: 40rem;
+  height: 4rem;
   position: absolute;
-  top: 4.5rem;
+  top: -1rem;
   opacity: 1;
   z-index: 9;
   display: -webkit-box;
@@ -1011,7 +1010,7 @@ a.search-btn i:before {
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1019,7 +1018,7 @@ a.search-btn i:before {
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -1038,6 +1037,7 @@ a.search-btn i:before {
   background-color: #f0f3f6;
   position: relative;
   padding-top: 18rem;
+  padding-bottom: 15rem;
 }
 
 .counter-overview-area::before {
@@ -1096,7 +1096,7 @@ a.search-btn i:before {
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1104,7 +1104,7 @@ a.search-btn i:before {
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -1129,18 +1129,6 @@ a.search-btn i:before {
   z-index: 1;
   background-color: #FFFFFF;
   padding: 1rem 3rem;
-}
-
-.counter-area::after {
-  background-image: url(../images/fun-facts/dot_shape.svg);
-  content: "";
-  position: absolute;
-  bottom: -5rem;
-  left: -7rem;
-  z-index: 0;
-  width: 17.5rem;
-  height: 17.5rem;
-  background-repeat: no-repeat;
 }
 
 .counter-area .counter-container .counter-info .inner-count {
@@ -1199,7 +1187,7 @@ a.search-btn i:before {
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1207,7 +1195,97 @@ a.search-btn i:before {
   line-height: 5.6rem;
 }
 
-.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.gallary-area {
+  padding-top: 16rem;
+  padding-bottom: 10rem;
+}
+
+.gallary-area .title-box {
+  position: relative;
+}
+
+.gallary-area .title-box::before {
+  background-image: url(../images/gallary/icon.svg);
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  z-index: -3;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+}
+
+.gallary-area .gallary-img-box p.sub-title {
+  color: #f9504c;
+}
+
+.gallary-area .gallary-img-box h2.title {
+  font-size: 4.8rem;
+}
+
+.gallary-area .gallary-img-box img {
+  width: 100%;
+}
+
+.gallary-area .gallary-img-box .social-media {
+  margin-top: 10rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Rubik", sans-serif;
+}
+
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .gallary-area .gallary-img-box h2.title, .timer-area .time-counter .timer-title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4, .gallary-area .gallary-img-box p.sub-title {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -1226,8 +1304,7 @@ a.search-btn i:before {
 /*--- Colors ---*/
 /*--- Transitions ---*/
 .timer-area {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
   position: relative;
 }
 
@@ -1263,17 +1340,21 @@ a.search-btn i:before {
 
 .timer-area .time-counter #timer {
   margin-bottom: 3rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .timer-area .time-counter #timer div.time-count {
   background: none;
-  font-size: 6rem;
+  font-size: 4.8rem;
   font-weight: 700;
   text-align: center;
   color: #101010;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
-  margin-right: 5rem;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
   position: relative;
 }
 
@@ -1294,8 +1375,8 @@ a.search-btn i:before {
   border-radius: 5rem;
   background-color: #f9504c;
   position: absolute;
-  right: -4rem;
-  top: 0;
+  right: -2.5rem;
+  top: -0.5rem;
 }
 
 .timer-area .time-counter #timer div.time-count:not(:last-child)::after {
@@ -1305,8 +1386,8 @@ a.search-btn i:before {
   border-radius: 5rem;
   background-color: #f9504c;
   position: absolute;
-  right: -4rem;
-  top: 1.5rem;
+  right: -2.5rem;
+  top: 1rem;
 }
 
 .timer-area .time-counter .purchase-btn {

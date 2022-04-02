@@ -1,0 +1,38 @@
+@import "./classes";
+@import "./variables";
+
+.gallary-area {
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+    .title-box {
+        position: relative;
+        &::before {
+            background-image: url(../images/gallary/icon.svg);
+            content: "";
+            position: absolute;
+            top: -5rem;
+            left: -5rem;
+            z-index: -3;
+            width: 15rem;
+            height: 15rem;
+            background-repeat: no-repeat;
+        }
+    }
+    .gallary-img-box {
+        p.sub-title {
+            @extend .section-sub-title-style;
+            color: $primary-clr;
+        }
+        h2.title {
+            @extend .section-title-style;
+            font-size: 4.8rem;
+        }
+        img {
+            width: 100%;
+        }
+
+        .social-media {
+            margin-top: 10rem;
+        }
+    }
+}

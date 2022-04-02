@@ -7,19 +7,7 @@
     z-index: 1;
     background-color: $white-clr;
     padding: 1rem 3rem;
-    &::after {
-        background-image: url(../images/fun-facts/dot_shape.svg);
-        content: "";
-        position: absolute;
-        bottom: -5rem;
-        left: -7rem;
-        z-index: 0;
-        width: 17.5rem;
-        height: 17.5rem;
-        background-repeat: no-repeat;
-    }
     .counter-container {
-        
         .counter-info {
             .inner-count {
                 padding: 1.5rem 0;
