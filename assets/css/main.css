@@ -2,7 +2,7 @@
 /*--- Colors ---*/
 /*--- Transitions ---*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
   font-size: 1.6rem;
   border-radius: 0.5rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -10,7 +10,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
   background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
   background: linear-gradient(90deg, #f94843, #ff7b49);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -20,13 +20,13 @@
   color: #FFFFFF;
 }
 
-.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
   background: #101010;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -408,7 +408,7 @@
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
-.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
   font-size: 1.6rem;
   border-radius: 0.5rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -416,7 +416,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
   background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
   background: linear-gradient(90deg, #f94843, #ff7b49);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -426,13 +426,13 @@
   color: #FFFFFF;
 }
 
-.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
   background: #101010;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -726,7 +726,7 @@
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
-.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
   font-size: 1.6rem;
   border-radius: 0.5rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -734,7 +734,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
   background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
   background: linear-gradient(90deg, #f94843, #ff7b49);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -744,13 +744,13 @@
   color: #FFFFFF;
 }
 
-.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
   background: #101010;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -987,7 +987,7 @@ a.search-btn i:before {
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
-.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
   font-size: 1.6rem;
   border-radius: 0.5rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -995,7 +995,7 @@ a.search-btn i:before {
   font-family: "Rubik", sans-serif;
 }
 
-.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
   background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
   background: linear-gradient(90deg, #f94843, #ff7b49);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -1005,13 +1005,13 @@ a.search-btn i:before {
   color: #FFFFFF;
 }
 
-.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
   background: #101010;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1037,18 +1037,30 @@ a.search-btn i:before {
 .counter-overview-area {
   background-color: #f0f3f6;
   position: relative;
-  border-bottom: 1px solid;
+  padding-top: 18rem;
 }
 
 .counter-overview-area::before {
-  background-image: url(../images/fun-facts/dot_shape.svg);
+  background-image: url(../images/counters/image_1.png);
   content: "";
   position: absolute;
-  bottom: 1rem;
-  left: 31%;
+  top: 0;
+  left: 0;
   z-index: 0;
-  width: 17.5rem;
-  height: 17.5rem;
+  width: 62.5rem;
+  height: 60.3rem;
+  background-repeat: no-repeat;
+}
+
+.counter-overview-area::after {
+  background-image: url(../images/counters/image_2.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 50rem;
+  height: 60.3rem;
   background-repeat: no-repeat;
 }
 
@@ -1060,7 +1072,7 @@ a.search-btn i:before {
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
-.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
   font-size: 1.6rem;
   border-radius: 0.5rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1068,7 +1080,7 @@ a.search-btn i:before {
   font-family: "Rubik", sans-serif;
 }
 
-.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
   background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
   background: linear-gradient(90deg, #f94843, #ff7b49);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -1078,13 +1090,13 @@ a.search-btn i:before {
   color: #FFFFFF;
 }
 
-.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
   background: #101010;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2 {
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
   font-size: 4.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1119,11 +1131,23 @@ a.search-btn i:before {
   padding: 1rem 3rem;
 }
 
+.counter-area::after {
+  background-image: url(../images/fun-facts/dot_shape.svg);
+  content: "";
+  position: absolute;
+  bottom: -5rem;
+  left: -7rem;
+  z-index: 0;
+  width: 17.5rem;
+  height: 17.5rem;
+  background-repeat: no-repeat;
+}
+
 .counter-area .counter-container .counter-info .inner-count {
   padding: 1.5rem 0;
 }
 
-.counter-area .counter-container .counter-info .inner-count h2 {
+.counter-area .counter-container .counter-info .inner-count h2.counter {
   color: #f9504c;
   font-size: 4rem;
   margin: 0;
@@ -1146,6 +1170,147 @@ a.search-btn i:before {
 
 .counter-area .counter-container .counter-info h4 {
   color: #101010;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Rubik", sans-serif;
+}
+
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .timer-area .time-counter .purchase-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover, .timer-area .time-counter .purchase-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title, .counter-area .counter-container .counter-info .inner-count h2.counter, .timer-area .time-counter .timer-title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title, .counter-area .counter-container .counter-info h4 {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.timer-area {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.timer-area::before {
+  background-image: url(../images/fun-facts/left_image.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 43.5rem;
+  height: 67.5rem;
+  background-repeat: no-repeat;
+}
+
+.timer-area::after {
+  background-image: url(../images/fun-facts/right_image.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 40.5rem;
+  height: 67.6rem;
+  background-repeat: no-repeat;
+}
+
+.timer-area .time-counter .timer-title {
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+  line-height: 3.2rem;
+}
+
+.timer-area .time-counter #timer {
+  margin-bottom: 3rem;
+}
+
+.timer-area .time-counter #timer div.time-count {
+  background: none;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #101010;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+  margin-right: 5rem;
+  position: relative;
+}
+
+.timer-area .time-counter #timer div.time-count span {
+  display: block;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #f9504c;
+  text-transform: uppercase;
+}
+
+.timer-area .time-counter #timer div.time-count:not(:last-child)::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5rem;
+  background-color: #f9504c;
+  position: absolute;
+  right: -4rem;
+  top: 0;
+}
+
+.timer-area .time-counter #timer div.time-count:not(:last-child)::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5rem;
+  background-color: #f9504c;
+  position: absolute;
+  right: -4rem;
+  top: 1.5rem;
+}
+
+.timer-area .time-counter .purchase-btn {
+  margin: 0;
 }
 
 /*=======  Google Fonts  =======*/
