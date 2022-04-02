@@ -11,23 +11,19 @@
 
 /*======= Extra small devices (portrait phones, less than 992px) =======*/
 @media (max-width: 991.98px) {
-
 	.counter-overview-area::before {
 		display: none;
 	}
 	.counter-overview-area::after {
 		display: none;
 	}
-
 	.counter-area {
 		margin-top: 3rem;
 	}
-
 }
 
 /*======= Extra small devices (portrait phones, less than 768px) =======*/
 @media (max-width: 767.98px) {
-
 	.hero-content {
 		text-align: center;
 	}
@@ -37,8 +33,6 @@
 	.hero-area .hero-img-area img {
 		margin-top: 5rem;
 	}
-
-
 	.time-counter {
 		margin-top: 8rem;
 		text-align: center;
@@ -50,41 +44,34 @@
 	.timer-img {
 		text-align: center;
 	}
-	
 }
 
 /*======= Extra small devices (portrait phones, less than 576px) =======*/
 @media (max-width: 575.98px) {
-
 	.hero-area .hero-content .hero-area-btns .purchase-btn {
 		margin-right: 1.5;
 	}
 	.hero-area-btns .btn-calendar {
 		margin-top: 3rem;
 	}
-
 	.counter-overview-area {
 		text-align: center;
 	}
-
 	.gallary-img-box {
 		text-align: center;
 	}
-
 	.timer-area::before {
 		display: none;
 	}
 	.timer-area::after {
 		display: none;
 	}
-
 	.timer-area .time-counter #timer div.time-count {
 		font-size: 3rem;
 	}
 }
 
 @media (max-width: 359.98px) {
-
 	.navbar-extra {
 		background: #363636;
 	}
@@ -97,6 +84,5 @@
 	.transparent-header .navbar-wrapper.breakpoint-on .navbar-inner {
 		padding: 0;
 	}
-
 }
  
