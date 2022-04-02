@@ -1,0 +1,18 @@
+@import "./classes";
+
+.counter-overview-area {
+    .counter-title {
+        p.sub-title {
+            @extend .section-sub-title-style;
+            color: $primary-clr;
+            margin-top: -4rem;
+        }
+        h2.title {
+            @extend .section-title-style;
+        }
+    }
+
+    .counter-info {
+        @extend .section-info-style;
+    }
+}

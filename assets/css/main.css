@@ -2,23 +2,51 @@
 /*--- Colors ---*/
 /*--- Transitions ---*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-.booking-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
-  color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
-  background: linear-gradient(90deg, #f94843, #ff7b49);
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
   border-radius: 0.5rem;
-  margin-left: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-family: "Rubik", sans-serif;
 }
 
-.booking-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#f94843), to(#ff7b49));
-  background: linear-gradient(-90deg, #f94843, #ff7b49);
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
 }
 
 /*--- Font Family ---*/
@@ -377,8 +405,306 @@
   border-color: transparent;
 }
 
-.banner-area {
-  height: 1500px;
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Rubik", sans-serif;
+}
+
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
+}
+
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.hero-area {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(251, 91, 4, 0.9)), to(rgba(251, 12, 5, 0.602679))), url(../images/header/top_img.png);
+  background: linear-gradient(90deg, rgba(251, 91, 4, 0.9) 0%, rgba(251, 12, 5, 0.602679) 100%), url(../images/header/top_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  position: relative;
+}
+
+.hero-area::before {
+  background-image: url(../images/header/elements/event.png);
+  content: "";
+  position: absolute;
+  bottom: -8rem;
+  right: 0;
+  z-index: 0;
+  width: 77.3rem;
+  height: 35rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-1::before {
+  background-image: url(../images/header/elements/line_01.svg);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  z-index: 0;
+  width: 0.3rem;
+  height: 80rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-2::before {
+  background-image: url(../images/header/elements/line_02.svg);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 36%;
+  z-index: 0;
+  width: 0.3rem;
+  height: 80rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-2::after {
+  background-image: url(../images/header/elements/shape-1.png);
+  content: "";
+  position: absolute;
+  bottom: 7rem;
+  left: 36%;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-3::before {
+  background-image: url(../images/header/elements/line_03.svg);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 52%;
+  z-index: 0;
+  width: 0.3rem;
+  height: 80rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-3::after {
+  background-image: url(../images/header/elements/shape-1.png);
+  content: "";
+  position: absolute;
+  top: 7rem;
+  left: 54%;
+  z-index: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-4::before {
+  background-image: url(../images/header/elements/line_04.svg);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 72%;
+  z-index: 0;
+  width: 0.3rem;
+  height: 80rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-4::after {
+  background-image: url(../images/header/elements/shape-2.png);
+  content: "";
+  position: absolute;
+  top: 7rem;
+  left: 72%;
+  z-index: 0;
+  width: 1.8rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .line .line-5::before {
+  background-image: url(../images/header/elements/line_05.svg);
+  content: "";
+  bottom: 0;
+  left: 90%;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.hero-area .hero-content p.sub-title {
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.hero-area .hero-content h1.title {
+  font-size: 6.4rem;
+  color: #FFFFFF;
+  font-family: #f9504c;
+  font-weight: 700;
+  line-height: 7rem;
+  margin-bottom: 3rem;
+}
+
+.hero-area .hero-content .date-and-place {
+  margin-bottom: 4.5rem;
+}
+
+.hero-area .hero-content .date-and-place span {
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 3.4rem;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.hero-area .hero-content .date-and-place span::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #FFFFFF;
+  border-radius: 3rem;
+  position: absolute;
+  display: inline-block;
+  left: -1rem;
+  top: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-area .hero-content .date-and-place span.place {
+  font-size: 1.6rem;
+}
+
+.hero-area .hero-content .hero-area-btns .purchase-btn {
+  background: #101010;
+  color: #FFFFFF;
+  padding: 1.5rem 3rem;
+  margin-right: 3rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.hero-area .hero-content .hero-area-btns .purchase-btn:hover {
+  background: #f94843;
+}
+
+.hero-area .hero-content .hero-area-btns .btn-calendar {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hero-area .hero-content .hero-area-btns .btn-calendar:hover {
+  color: #101010;
+}
+
+.hero-area .hero-img-area {
+  position: relative;
+}
+
+.hero-area .hero-img-area::before {
+  background-image: url(../images/header/elements/shape-5.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  z-index: 0;
+  width: 6.2rem;
+  height: 1.8rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .hero-img-area::after {
+  background-image: url(../images/header/elements/shape-4.png);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  z-index: 0;
+  width: 6.2rem;
+  height: 1.8rem;
+  background-repeat: no-repeat;
+}
+
+.hero-area .hero-img-area img {
+  margin-bottom: -25rem;
+  height: 65rem;
+}
+
+.hero-area .video-modal .control-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  padding: 0;
+}
+
+.hero-area .video-modal .control-btn i::before {
+  font-size: 3rem;
+  color: #f9504c;
+}
+
+.hero-area .video-modal .modal-content h5.modal-title {
+  font-size: 1.8rem;
+  color: #101010;
+}
+
+.hero-area .video-modal .modal-content .modal-body .body-content {
+  width: 100%;
+  height: 40rem;
 }
 
 /*=== Footer area start===*/
@@ -400,23 +726,51 @@
 /*--- Font Family ---*/
 /*--- Colors ---*/
 /*--- Transitions ---*/
-.booking-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
-  color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
-  background: linear-gradient(90deg, #f94843, #ff7b49);
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
   border-radius: 0.5rem;
-  margin-left: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-family: "Rubik", sans-serif;
 }
 
-.booking-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#f94843), to(#ff7b49));
-  background: linear-gradient(-90deg, #f94843, #ff7b49);
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
 }
 
 /*--- Font Family ---*/
@@ -630,6 +984,61 @@ a.search-btn i:before {
 }
 
 /*--- Preloader CSS END ---*/
+/*--- Font Family ---*/
+/*--- Colors ---*/
+/*--- Transitions ---*/
+.primary-btn-style, .purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn, .hero-area .hero-content .hero-area-btns .purchase-btn, .hero-area .hero-content .hero-area-btns .btn-calendar {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Rubik", sans-serif;
+}
+
+.purchase-btn-style, .navbar-wrapper .navbar-inner .book-now-btn, .mobile-menu-panel .book-now-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#f94843), to(#ff7b49));
+  background: linear-gradient(90deg, #f94843, #ff7b49);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+}
+
+.purchase-btn-style:hover, .navbar-wrapper .navbar-inner .book-now-btn:hover, .mobile-menu-panel .book-now-btn:hover {
+  background: #101010;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title-style, .counter-overview-area .counter-title h2.title {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #101010;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style, .hero-area .hero-content p.sub-title, .counter-overview-area .counter-title p.sub-title {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style, .counter-overview-area .counter-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.6rem;
+}
+
+.counter-overview-area .counter-title p.sub-title {
+  color: #f9504c;
+  margin-top: -4rem;
+}
+
 /*=======  Google Fonts  =======*/
 * {
   margin: 0;

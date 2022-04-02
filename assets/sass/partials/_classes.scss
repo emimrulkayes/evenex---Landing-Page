@@ -1,15 +1,44 @@
 @import "./variables";
 
-.booking-btn-style {
-    color: $white-clr;
-    background: linear-gradient(90deg, #f94843, #ff7b49);
-    padding: 1rem 3rem;
-    font-size: 1.4rem;
+.primary-btn-style {
+    font-size: 1.6rem;
     border-radius: 0.5rem;
-    margin-left: 2rem;
     transition: $transition-05s;
+    font-family: $secondary-font;
+}
+
+.purchase-btn-style {
+    @extend .primary-btn-style;
+    background: linear-gradient(90deg, #f94843, #ff7b49);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-left: 2rem;
+    padding: 1rem 2.5rem;
+    color: $white-clr;
     &:hover {
-        background: linear-gradient(-90deg, #f94843, #ff7b49);
+      background: $secondary-clr;
+      transition: $transition-05s;
     }
+}
+
+.section-title-style {
+  font-size: 4.8rem;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $secondary-clr;
+  line-height: 5.6rem;
+}
+
+.section-sub-title-style {
+  font-size: 1.8rem;
+  font-family: $secondary-font;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.section-info-style {
+  font-family: $secondary-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $text-clr;
+  line-height: 2.6rem;
 }

@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     .book-now-btn {
-        @extend .booking-btn-style;
+      @extend .purchase-btn-style;
     }
   }
   .nav-brand {
@@ -208,9 +208,8 @@
     transform: translateX(-100%);
     visibility: hidden;
     opacity: 0;
-
     .book-now-btn {
-        @extend .booking-btn-style;
+      @extend .purchase-btn-style;
     }
   }
   
